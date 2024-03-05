@@ -4,10 +4,16 @@ interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-      <strong>Hello World</strong>
-      <p>This is my first ionic Application <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
+    <ion-card>
+  <ion-card-header>
+    <ion-card-title>Card Title</ion-card-title>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>
   );
 };
 
