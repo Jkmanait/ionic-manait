@@ -1,19 +1,18 @@
 import './ExploreContainer.css';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <ion-card>
-  <ion-card-header>
-    <ion-card-title>ionic Application</ion-card-title>
-    <ion-card-subtitle>IT35A</ion-card-subtitle>
-  </ion-card-header>
+    <IonCard>
+    <IonCardHeader>
+      <IonCardTitle>ionic Application</IonCardTitle>
+      <IonCardSubtitle>IT35A</IonCardSubtitle>
+    </IonCardHeader>
 
-  <ion-card-content>
-    "This is my first ionic Application"
-  </ion-card-content>
-</ion-card>
+    <IonCardContent>This is my first ionic Application</IonCardContent>
+  </IonCard>
   );
 };
 
